@@ -7,6 +7,7 @@ using TooniiMachine.AbstractCalc;
 
 namespace TooniiMachine.Undsen
 {
+    //aimshigtai bailaa
     public class BasicCalculator : Calculator, IOperations
     {
         public void Add(double number)
