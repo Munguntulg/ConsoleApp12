@@ -25,6 +25,7 @@ namespace CalculatorApp
                 Console.WriteLine("5: Store result in memory");
                 Console.WriteLine("6: View memory contents");
                 Console.WriteLine("7: Exit");
+                Console.WriteLine("8: Reset memory"); 
 
                 string input = Console.ReadLine();
                 double value;
@@ -101,11 +102,17 @@ namespace CalculatorApp
                         Console.WriteLine("Exiting program.");
                         break;
 
+                    case "8":  
+                        memory.Clear();  
+                        Console.WriteLine("Memory has been cleared.");
+                        break;
+
                     default:
                         Console.WriteLine("Invalid selection. Please choose a valid option.");
                         break;
                 }
             }
+
         }
     }
 }

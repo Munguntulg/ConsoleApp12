@@ -8,7 +8,10 @@ namespace TooniiMachine.Undsen
 {
     public abstract class Calculator
     {
-        public double Result { get; protected set; }
+        /// <summary>
+        /// ur dun hadgalna
+        /// </summary>
+        public double Result { get; protected set; } = 0;
     }
 }
 

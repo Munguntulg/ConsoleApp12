@@ -31,6 +31,28 @@ namespace TooniiMachine.Undsen
             }
             Result /= number;
         }
+        private double memory = 0;
+
+        public void MemorySave()
+        {
+            memory = Result;
+        }
+
+        public void MemoryRecall()
+        {
+            Result = memory;
+        }
+
+        public void MemoryClear()
+        {
+            memory = 0;
+        }
+        public void Reset()
+        {
+            Result = 0;
+        }
+
+
     }
 }
 

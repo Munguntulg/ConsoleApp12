@@ -25,5 +25,10 @@ namespace TooniiMachie.MemoryApp
         {
             return memoryItems;
         }
+        public void Clear()
+        {
+            memoryItems.Clear(); // эсвэл memoryValue = 0; гэх мэт
+        }
+
     }
 }
