@@ -12,23 +12,23 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
-            calc = new Calculator();
-            result.txt = "0"; 
         }
+
+        string op;
+        int num1;
+        int num2;
+        int result;
 
         private void Nemeh_Click(object sender, EventArgs e)
         {
+            op = "-";
+            num1 = int.Parse(too_haruulah.Text);
+            too_haruulah.Clear();
 
 
         }
-        private void Tsipruud_Click(object sender, PaintEventArgs e)
-        {
-
-        }
-        private void Hariu(object sender, EventArgs e)
-        {
-
-        }
+       
+        
 
         private void Memory_Click(object sender, EventArgs e)
         {
@@ -37,9 +37,10 @@ namespace WinFormsApp1
 
         private void hasah_Click(object sender, EventArgs e)
         {
-
+            op = "+";
+            num1 = int.Parse(too_haruulah.Text);
+            too_haruulah.Clear();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -47,65 +48,40 @@ namespace WinFormsApp1
 
         private void Tentsuu_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void zurgaa_Click(object sender, EventArgs e)
-        {
+            num2 = int.Parse(too_haruulah.Text);
+            if (op == "-")
+            {
+                result = num1 + num2;
+            }
+            else
+            {
+                result = num1 + num2;
+            }
+            too_haruulah.Text = result + "";
 
         }
 
         private void neg_Click(object sender, EventArgs e)
         {
-
+            too_haruulah.Text = too_haruulah.Text + ((Button)sender).Text;
         }
 
-        private void hoyr_Click(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // memory clear button
+            too_haruulah.Clear();
+            num1 = 0;
+            num2 = 0;
+            result = 0;
+        }
+
+        private void too_haruulah_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void guraw_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dorow_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void taw_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void doloo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void naim_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ys_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void teg_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tegteg_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void butsah_Click(object sender, EventArgs e)
         {
 
         }
