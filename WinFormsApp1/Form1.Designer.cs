@@ -32,7 +32,7 @@
             hasah = new Button();
             hariu = new Label();
             Tentsuu = new Button();
-            Memory = new Button();
+            MS = new Button();
             ys = new Button();
             guraw = new Button();
             dorow = new Button();
@@ -44,6 +44,7 @@
             hoyr = new Button();
             teg = new Button();
             tegteg = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // Nemeh
@@ -72,11 +73,10 @@
             // 
             hariu.AutoSize = true;
             hariu.Font = new Font("Segoe UI", 30F);
-            hariu.Location = new Point(513, 74);
+            hariu.Location = new Point(423, 175);
             hariu.Name = "hariu";
-            hariu.Size = new Size(253, 54);
+            hariu.Size = new Size(0, 54);
             hariu.TabIndex = 2;
-            hariu.Text = "ur dun garna";
             hariu.Click += Hariu;
             // 
             // Tentsuu
@@ -88,15 +88,15 @@
             Tentsuu.Text = "=";
             Tentsuu.Click += Tentsuu_Click;
             // 
-            // Memory
+            // MS
             // 
-            Memory.Location = new Point(691, 248);
-            Memory.Name = "Memory";
-            Memory.Size = new Size(75, 38);
-            Memory.TabIndex = 13;
-            Memory.Text = "M";
-            Memory.UseVisualStyleBackColor = true;
-            Memory.Click += Memory_Click;
+            MS.Location = new Point(691, 248);
+            MS.Name = "MS";
+            MS.Size = new Size(75, 38);
+            MS.TabIndex = 13;
+            MS.Text = "MS";
+            MS.UseVisualStyleBackColor = true;
+            MS.Click += Memory_Click;
             // 
             // ys
             // 
@@ -219,11 +219,22 @@
             tegteg.UseVisualStyleBackColor = true;
             tegteg.Click += tegteg_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(423, 206);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 26;
+            label1.Text = "label1";
+            label1.Click += label1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(tegteg);
             Controls.Add(teg);
             Controls.Add(hoyr);
@@ -235,7 +246,7 @@
             Controls.Add(dorow);
             Controls.Add(guraw);
             Controls.Add(ys);
-            Controls.Add(Memory);
+            Controls.Add(MS);
             Controls.Add(Tentsuu);
             Controls.Add(hariu);
             Controls.Add(hasah);
@@ -253,7 +264,7 @@
         private Button hasah;
         private Label hariu;
         private Button Tentsuu;
-        private Button Memory;
+        private Button MS;
         private Button ys;
         private Button guraw;
         private Button dorow;
@@ -265,5 +276,6 @@
         private Button hoyr;
         private Button teg;
         private Button tegteg;
+        private Label label1;
     }
 }

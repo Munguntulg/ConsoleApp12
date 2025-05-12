@@ -1,16 +1,24 @@
-using TooniiMachine;
+using TooniiMachine.Undsen;
+using System.Windows.Forms;
+using System.Drawing.Text;
 
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
+        private Calculator calc;
+        private string operation;
+        private int zvvnvalue;
         public Form1()
         {
             InitializeComponent();
+            calc = new Calculator();
+            result.txt = "0"; 
         }
 
         private void Nemeh_Click(object sender, EventArgs e)
         {
+
 
         }
         private void Tsipruud_Click(object sender, PaintEventArgs e)
@@ -93,6 +101,11 @@ namespace WinFormsApp1
         }
 
         private void tegteg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
