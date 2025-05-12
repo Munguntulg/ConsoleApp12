@@ -21,14 +21,12 @@ namespace WinFormsApp1
 
         private void Nemeh_Click(object sender, EventArgs e)
         {
-            op = "-";
+            op = "+";
             num1 = int.Parse(too_haruulah.Text);
             too_haruulah.Clear();
 
 
         }
-       
-        
 
         private void Memory_Click(object sender, EventArgs e)
         {
@@ -37,7 +35,7 @@ namespace WinFormsApp1
 
         private void hasah_Click(object sender, EventArgs e)
         {
-            op = "+";
+            op = "-";
             num1 = int.Parse(too_haruulah.Text);
             too_haruulah.Clear();
         }
@@ -51,7 +49,7 @@ namespace WinFormsApp1
             num2 = int.Parse(too_haruulah.Text);
             if (op == "-")
             {
-                result = num1 + num2;
+                result = num1 - num2;
             }
             else
             {
@@ -83,7 +81,10 @@ namespace WinFormsApp1
 
         private void butsah_Click(object sender, EventArgs e)
         {
-
+            if (too_haruulah.Text.Length>0)
+            {
+                too_haruulah.Text = too_haruulah.Text.Remove(too_haruulah.Text.Length - 1);
+            }
         }
     }
 }

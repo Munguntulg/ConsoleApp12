@@ -249,6 +249,7 @@
             // 
             // too_haruulah
             // 
+            too_haruulah.Font = new Font("Stencil", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
             too_haruulah.Location = new Point(30, 128);
             too_haruulah.Multiline = true;
             too_haruulah.Name = "too_haruulah";
