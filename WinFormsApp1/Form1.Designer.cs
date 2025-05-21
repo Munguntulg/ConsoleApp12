@@ -233,6 +233,10 @@
             tegteg.Text = "00";
             tegteg.UseVisualStyleBackColor = true;
             tegteg.Click += neg_Click;
+
+
+
+
             // 
             // clear
             // 

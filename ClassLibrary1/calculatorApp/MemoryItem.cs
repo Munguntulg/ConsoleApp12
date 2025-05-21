@@ -21,14 +21,27 @@ namespace TooniiMachie.MemoryApp
             memoryItems.Add(new MemoryItem(value));
         }
 
+        public double? Recall()
+        {
+            if (memoryItems.Count == 0)
+                return null;
+            return memoryItems[memoryItems.Count - 1].Value;
+        }
+
         public List<MemoryItem> GetMemoryItems()
         {
             return memoryItems;
         }
+
         public void Clear()
         {
-            memoryItems.Clear(); // эсвэл memoryValue = 0; гэх мэт
+            memoryItems.Clear();
         }
 
+        public void RemoveLast()
+        {
+            if (memoryItems.Count > 0)
+                memoryItems.RemoveAt(memoryItems.Count - 1);
+        }
     }
 }
